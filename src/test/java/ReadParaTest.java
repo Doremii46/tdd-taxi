@@ -5,8 +5,8 @@ import static org.junit.Assert.assertEquals;
 public class ReadParaTest {
     @Test
     public void should_return_distance(){
-        ReadPara readPara = new ReadPara("1公里，等待0分钟");
-        assertEquals(1, readPara.getDistance());
+        ReadPara readPara = new ReadPara("10公里，等待0分钟");
+        assertEquals(10, readPara.getDistance());
         readPara = new ReadPara("10公里，等待0分钟");
         assertEquals(10, readPara.getDistance());
     }
